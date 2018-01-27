@@ -52,6 +52,7 @@ html {
 /* Sidebar */
 .site-title {
   margin-top: 0px;
+  margin-bottom:
 }
 
 .sidebar a,
@@ -78,6 +79,23 @@ html {
 
 nav {
   margin: 2em 0 2em 0;
+}
+
+.sidebar {
+  overflow: auto;
+}
+
+.sidebar .version {
+  font-size: 60%;
+  text-align: center;
+}
+
+.sidebar .external-title {
+  text-align: center;
+}
+
+.sidebar nav.external {
+  font-size: 80%;
 }
 
 /* Blocks */
@@ -160,10 +178,11 @@ section.page a:visited {
   color: #363636;
 }
 
-div.footer {
-  position: absolute;
-  right: 0px;
-  margin-right: 2em;
-  margin-bottom: 1em;
-  bottom: 0px;
+section div.highlight pre {
+  overflow: auto;
 }
+
+section code {
+  background-color: #fafafa;
+}
+

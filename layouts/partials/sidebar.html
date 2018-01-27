@@ -1,10 +1,17 @@
 <div class="sidebar">
     {{ partial "logo.html" }}
     <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+
+    <div class="version">
+            {{ now.Format "Jan 2, 2006" }}
+        </div>
+
     <nav class="internal">
         {{ partial "menu.html" . }}
     </nav>
+
     <nav class="external">
+        <div class="external-title">{{ .Site.Params.externalTitle }}</div>
         {{ with .Site.Menus.shortcuts }}
             <ul id="shortcuts">
                 {{ range sort . "Weight" }}
@@ -15,7 +22,4 @@
             </ul>
         {{ end }}
     </nav>
-    <div class="footer">
-        {{ now.Format "2006" }}
-    </div>
 </div>
