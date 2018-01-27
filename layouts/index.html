@@ -3,12 +3,7 @@
 <div class="content">
     {{ with .Sections }}
         {{ range .ByWeight }}
-            {{ partial "section.html" . }}
-            {{ if .Pages }}
-                {{ range .Pages.ByWeight }}
-                    {{ partial "section.html" . }}
-                {{ end }}
-            {{ end }}
+            {{ partial "section_list.html" . }}
         {{ end }}
     {{ end }}
 </div>
