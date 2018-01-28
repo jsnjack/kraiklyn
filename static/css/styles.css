@@ -25,7 +25,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 19rem;
     text-align: left;
   }
 }
@@ -178,7 +178,7 @@ section.page a:visited {
   color: #363636;
 }
 
-section div.highlight pre {
+section div pre {
   overflow: auto;
 }
 
