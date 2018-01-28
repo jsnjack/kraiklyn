@@ -14,7 +14,9 @@ A simple one page [Hugo](https://gohugo.io/) theme for documentation. Inspired b
 Clone the repository to your site’s themes directory.
 
 # Usage
-All content is rendered on the main page. Front-matter's `anchor` is used for the navigation. Content is ordered by Weight
+All content is rendered on the main page. Front-matter's `anchor` is used for the navigation. Content is ordered by Weight.
+
+When creating a new section, make sure `_index.md` exists for correct cross-references.
 
 ## Shortcodes
 
