@@ -56,3 +56,6 @@ name = "Javascript API"
 url = "https://docs.surfly.com/javascript.html"
 weight = 20
 ```
+
+## Add favicon
+Put `favicon.ico` inside `static` folder
