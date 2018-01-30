@@ -1,6 +1,6 @@
 html {
   font-family: "Open Sans", sans-serif;
-  color: rgba(0, 0, 0, 0.84);
+  color: #363636;
 }
 @media (min-width: 48em) {
   html {
@@ -30,11 +30,6 @@ html {
   }
 }
 
-.content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 @media (min-width: 48em) {
   .content {
     margin-left: 21rem;
@@ -45,14 +40,13 @@ html {
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
 }
 
 /* Sidebar */
 .site-title {
   margin-top: 0px;
-  margin-bottom:
 }
 
 .sidebar a,
@@ -156,7 +150,7 @@ section.page {
 }
 
 section.page h1 {
-  border-left: 2px solid;
+  border-left: 3px solid #363636;
   padding-left: 0.5em;
   margin-bottom: 0;
 }
