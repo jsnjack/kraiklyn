@@ -1,25 +1,28 @@
 <div class="sidebar">
-    {{ partial "logo.html" }}
-    <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+    <div class="navigation">
+        {{ partial "logo.html" }}
+        <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
 
-    <div class="version">
-            {{ now.Format "Jan 2, 2006" }}
-        </div>
 
-    <nav class="internal">
-        {{ partial "menu.html" . }}
-    </nav>
+        <nav class="internal">
+            {{ partial "menu.html" . }}
+        </nav>
 
-    <nav class="external">
-        <div class="external-title">{{ .Site.Params.externalTitle }}</div>
-        {{ with .Site.Menus.shortcuts }}
+        <nav class="external">
+            <div class="external-title">{{ .Site.Params.externalTitle }}</div>
+            {{ with .Site.Menus.shortcuts }}
             <ul id="shortcuts">
                 {{ range sort . "Weight" }}
-                    <li>
-                        <a href="{{.URL}}" target="_blank" rel="noopener">{{safeHTML .Name}}</a>
-                    </li>
+                <li>
+                    <a href="{{.URL}}" target="_blank" rel="noopener">{{safeHTML .Name}}</a>
+                </li>
                 {{ end }}
             </ul>
-        {{ end }}
-    </nav>
+            {{ end }}
+        </nav>
+    </div>
+
+    <div class="version">
+            generated on {{ now.Format "Jan 2, 2006" }}
+    </div>
 </div>
