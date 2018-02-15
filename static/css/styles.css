@@ -69,11 +69,6 @@ html, body {
 
 .sidebar ul li {
   list-style: none;
-  padding-left: 1em;
-}
-
-.sidebar ul ul li {
-  list-style: none;
   padding-left: 2em;
 }
 
