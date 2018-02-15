@@ -62,6 +62,10 @@ html, body {
   color: white;
 }
 
+.sidebar a:hover {
+  color: rgb(141, 141, 141);
+}
+
 .sidebar ul {
   margin: 0px;
   padding: 0px;
