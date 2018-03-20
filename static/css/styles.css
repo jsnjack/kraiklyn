@@ -187,3 +187,7 @@ section div pre {
 section code {
   background-color: #fafafa;
 }
+
+section img {
+  max-width: 100%;
+}
