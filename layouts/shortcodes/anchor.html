@@ -2,3 +2,6 @@
 {{ with .Site.GetPage "page" $page_path }}
     #{{ .Params.anchor }}
 {{ end -}}
+{{ with .Site.GetPage "section" $page_path }}
+    #{{ .Params.anchor }}
+{{ end -}}
