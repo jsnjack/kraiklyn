@@ -40,6 +40,33 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.sidebar.sidebar-default {
+  background-color: #363636;
+}
+.sidebar.sidebar-green {
+  background-color: #459D61;
+}
+.sidebar.sidebar-purple {
+  background-color: #77518A;
+}
+.sidebar.sidebar-pink {
+  background-color: #AD6AA9;
+}
+.sidebar.sidebar-red {
+  background-color: #B05353;
+}
+.sidebar.sidebar-cyan {
+  background-color: #5399B0;
+}
+.sidebar.sidebar-blue {
+  background-color: #5378B0;
+}
+.sidebar.sidebar-grey {
+  background-color: #959492;
+}
+.sidebar.sidebar-orange {
+  background-color: #DAA35C;
+}
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
