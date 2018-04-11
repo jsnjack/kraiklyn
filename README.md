@@ -68,3 +68,13 @@ Available values : default, green, purple, pink, red, cyan, blue, grey, orange.
 
 ## Add favicon
 Put `favicon.ico` inside `static` folder
+
+
+## Add custom CSS
+You can add your custom CSS files with the `customCss` parameter of the configuration file.
+
+```toml
+customCss = ["css/custom.css", "css/custom2.css"]
+```
+
+Just put your files in `static/css` directory.
