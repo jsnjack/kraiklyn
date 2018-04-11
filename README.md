@@ -43,7 +43,7 @@ Since the theme is a one-page theme, this is the way to make cross-references on
 Replace logo by creating `layouts/partials/logo.html` file
 
 ### Adding menu entries to the external links section
-Customize the name of the section by addind to the `config.toml`
+Customize the name of the section by adding to the `config.toml`
 ```toml
 [params]
 externalTitle = "Surfly docs"
@@ -56,6 +56,15 @@ name = "Javascript API"
 url = "https://docs.surfly.com/javascript.html"
 weight = 20
 ```
+
+### Changing color
+Customize the color of the sidebar by adding to the `config.toml`
+```toml
+[params]
+sidebarColor = "green"
+```
+
+Available values : default, green, purple, pink, red, cyan, blue, grey, orange.
 
 ## Add favicon
 Put `favicon.ico` inside `static` folder

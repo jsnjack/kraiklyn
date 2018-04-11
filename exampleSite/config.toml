@@ -9,6 +9,7 @@ pygmentsStyle = "monokailight"
 
 [params]
 externalTitle = "Kraiklyn theme"
+sidebarColor = "default"
 
 [[menu.shortcuts]]
 name = "Kraiklyn on Github"
