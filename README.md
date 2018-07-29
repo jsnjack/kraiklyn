@@ -28,7 +28,7 @@ By default only ports 22, 80 and 443 are open
 {{% /block %}}
 ```
 
-Available types: `note`, `tip`, `warning`, `info`
+Available types: `note`, `tip`, `warn`, `info`
 
 ### anchor
 Returns `anchor` parameter (see `archetypes/default.md` file) of the article
