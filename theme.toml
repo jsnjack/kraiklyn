@@ -8,7 +8,7 @@ description = "A theme for a simple one page documentation"
 homepage = "https://github.com/jsnjack/kraiklyn/"
 tags = ["one page", "docs", "documentation", "simple", "minimalistic"]
 features = []
-min_version = "0.33"
+min_version = "0.45"
 
 [author]
   name = "Yauhen Shulitski"
