@@ -4,10 +4,11 @@
         {{ range .Sections.ByWeight }}
             {{ partial "section_list.html" . }}
         {{ end }}
-    {{ end }}
+    {{ else }}
             {{ range .Pages.ByWeight }}
                 {{ partial "section.html" . }}
             {{ end }}
+    {{ end }}
 {{ else }}
     {{ partial "section.html" . }}
 {{ end }}
