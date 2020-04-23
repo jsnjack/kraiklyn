@@ -5,4 +5,4 @@ anchor: "balveda"
 weight: 40
 ---
 
-Juboal-Rabaroansa Perosteck Alseyn Balveda dam T'seif, usually referred to as Perosteck Balveda, is an operative of the Culture assigned to track and apprehend [Bora Horza Gobuchul]({{% anchor "characters/bora.md" %}}). She works for the Special Circumstances branch of Contact, and despite being ambivalent about the methods they use, deeply believes in their objectives.
+Juboal-Rabaroansa Perosteck Alseyn Balveda dam T'seif, usually referred to as Perosteck Balveda, is an operative of the Culture assigned to track and apprehend [Bora Horza Gobuchul]({{< anchor "characters/bora.md" >}}). She works for the Special Circumstances branch of Contact, and despite being ambivalent about the methods they use, deeply believes in their objectives.

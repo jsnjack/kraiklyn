@@ -23,9 +23,9 @@ When creating a new section, make sure `_index.md` exists for correct cross-refe
 ### block
 Create notes, tips and other blocks on the page
 ```markdown
-{{% block note %}}
+{{< block note >}}
 By default only ports 22, 80 and 443 are open
-{{% /block %}}
+{{< /block >}}
 ```
 
 Available types: `note`, `tip`, `warn`, `info`
@@ -33,7 +33,7 @@ Available types: `note`, `tip`, `warn`, `info`
 ### anchor
 Returns `anchor` parameter (see `archetypes/default.md` file) of the article
 ```markdown
-Check [Proxy environment]({{% anchor "installation/proxy-environment.md" %}}) section
+Check [Proxy environment]({{< anchor "installation/proxy-environment.md" >}}) section
 ```
 Since the theme is a one-page theme, this is the way to make cross-references on the website
 
