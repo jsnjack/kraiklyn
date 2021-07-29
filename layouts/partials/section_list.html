@@ -1,15 +1,11 @@
+    {{ partial "section.html" . }}
 {{ if .Pages }}
-    {{ partial "section.html" . }}
-    {{ if .Sections }}
-        {{ range .Sections.ByWeight }}
+    {{ range .Pages.ByWeight }}
+        {{ if .IsSection }}
             {{ partial "section_list.html" . }}
+        {{ else }}
+            {{ partial "section.html" . }}
         {{ end }}
-    {{ else }}
-            {{ range .Pages.ByWeight }}
-                {{ partial "section.html" . }}
-            {{ end }}
     {{ end }}
-{{ else }}
-    {{ partial "section.html" . }}
 {{ end }}
 
