@@ -1,21 +1,15 @@
-{{ if .Pages }}
     <li>
         <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
+{{ if .Pages }}
         <ul>
-            {{ if .Sections }}
-                {{ range .Sections.ByWeight }}
+            {{ range .Pages.ByWeight }}
+                {{ if .IsSection }}
                     {{ partial "menu_page_list.html" . }}
-                {{ end }}
-            {{ else }}
-                {{ range .Pages.ByWeight }}
+                {{ else }}
                     <li><a href="#{{ .Params.anchor }}">{{ .Title }}</a></li>
                 {{ end }}
             {{ end }}
         </ul>
-    </li>
-{{ else }}
-    <li>
-        <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
-    </li>
 {{ end }}
+    </li>
 
