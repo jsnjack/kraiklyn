@@ -1,0 +1,19 @@
+{{- $file := .Get "file" -}}
+{{- $skipTo := .Get "skip-to" -}}
+{{- $lang := .Get "lang" | default "text" -}}
+{{- $content := readFile $file -}}
+{{- if $content -}}
+  {{- if $skipTo -}}
+    {{- $parts := split $content $skipTo -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $content = index $parts 1 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if ne $lang "text" -}}
+    {{ highlight $content $lang "" }}
+  {{- else -}}
+    <pre><code>{{ $content }}</code></pre>
+  {{- end -}}
+{{- else -}}
+<p>Could not read file: {{ $file }}</p>
+{{- end -}}

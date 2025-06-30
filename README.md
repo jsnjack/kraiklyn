@@ -27,8 +27,13 @@ Create notes, tips and other blocks on the page
 By default only ports 22, 80 and 443 are open
 {{< /block >}}
 ```
-
 Available types: `note`, `tip`, `warn`, `info`
+
+### readfile
+Reads a file and displays its contents, skipping the specified section.
+```markdown
+{{< readfile file="path/to/file" skip-to="section" lang="ini" >}}
+```
 
 ### anchor
 Returns `anchor` parameter (see `archetypes/default.md` file) of the article
